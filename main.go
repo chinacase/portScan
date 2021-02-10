@@ -48,7 +48,7 @@ func handelParams(p inputParams) {
 		t = 2048
 	}
 	thread <- t
-	fmt.Println(len(ips))
+	//fmt.Println(len(ips))
 	for _, ip := range ips {
 		for _, port := range ports {
 			ipaddress <- ip + ":" + strconv.Itoa(port)
@@ -230,5 +230,5 @@ func main() {
 	go runScan()
 	handelParams(params) //参数处理
 	needtime := time.Since(startTime)
-	fmt.Printf("need time %s", needtime)
+	fmt.Printf("run time %s", needtime)
 }
