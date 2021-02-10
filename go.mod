@@ -1,3 +1,3 @@
-module portscan
+module scant
 
 go 1.15
